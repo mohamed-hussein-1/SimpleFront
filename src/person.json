@@ -1,0 +1,12 @@
+{
+  "nested": {
+    "Person": {
+      "fields": {
+        "name": {
+          "type": "string",
+          "id": 1
+        }
+      }
+    }
+  }
+}
