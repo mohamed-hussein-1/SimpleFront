@@ -67,9 +67,15 @@ class App extends Component {
     //     console.log(buffer);
    
     return (
-      <div>
+      <div className="container">
+        <div className="email-form">
+          UserName 
         <input type="text" name="email" value={this.state.username} onChange={this.updateUsernameValue}/>
-        <input type="password" name="password" value={this.state.password} onChange={this.updatePasswordValue}/>
+        </div>
+        <div className="password-form">
+          password
+          <input type="password" name="password" value={this.state.password} onChange={this.updatePasswordValue}/><br/>
+        </div>
         <input type="submit" value="submit" onClick={this.handleSubmit}/>
         {this.state.users.length>0 &&
           <div>
